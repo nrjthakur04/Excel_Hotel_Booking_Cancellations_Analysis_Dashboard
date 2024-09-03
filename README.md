@@ -35,6 +35,9 @@ Hotel Booking/Cancellations Data: The primary dataset used for this analysis is 
 
 ### Calculations and Findings
 
+![Visualization](https://github.com/user-attachments/assets/02b46d5e-ecca-4369-a257-03788268b646)
+
+
 1. Total Bookings vs. Total Cancellations
 Total Bookings: 119,390
 Total Cancellations: 44,224
