@@ -31,11 +31,11 @@ This setup allowed us to perform a deeper analysis of cancellations based on roo
 
 ### Data Sources
 
-Hotel Booking/Cancellations Data: The primary dataset used for this analysis is the "Kirti Store Dataset.xlsx" file, containing detailed information about each sale made by the store and is attached in this repo.
+Hotel Booking/Cancellations Data: The primary dataset used for this analysis is the "hotel_bookings.csv" file, containing detailed information about each booking and cancellation made by the guest and is attached in this repo.
 
 ### Calculations and Findings
 
-![Visualization](https://github.com/user-attachments/assets/02b46d5e-ecca-4369-a257-03788268b646)
+![Visualization](https://github.com/user-attachments/assets/f6892761-201d-44c3-ac26-9c10e2a0a997)
 
 
 1. Total Bookings vs. Total Cancellations
