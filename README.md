@@ -16,34 +16,16 @@ In this project, I've analyzed the number of people booking the hotel annually a
 
 Data Cleaning and Preparation: I've removed columns that were not relevant to the analysis to ensure a focused approach on the key factors affecting bookings and cancellations. Removed columns are- 
 lead_time, arrival_date_week_number, arrival_date_day_of_month, stays_in_weekend_nights, stays_in_week_nights, meal, market_segment, distribution_channel, is_repeated_guest, previous_cancellations, previous_bookings_not_canceled, booking_changes, deposit_type, agent, company,
-days_in_waiting_list, customer_type, adr, required_car_parking_spaces, total_of_special_requests. 
-
-![image](https://github.com/user-attachments/assets/b68f79c3-5ddb-4e1b-9fd0-9ba3d6262f6d)
-
-![image](https://github.com/user-attachments/assets/cbad5465-27d6-4063-af80-466fae7dcb43)
-
-![image](https://github.com/user-attachments/assets/950e5bcf-28ab-4db2-9bee-16b995496dad)
-
-![image](https://github.com/user-attachments/assets/2158775f-2c19-4761-848e-0c65fe72b820)
-
-![image](https://github.com/user-attachments/assets/fd5562c7-eace-4233-8655-d7d2dbd76256)
-
-![image](https://github.com/user-attachments/assets/2a601330-4250-4594-bbfe-f68f4c15c81a)
-
-![image](https://github.com/user-attachments/assets/2a70babb-e72b-4bcb-a43b-1d7f02acefca)
-
-![image](https://github.com/user-attachments/assets/b12e5a00-c5a8-4471-9ee3-b349db4f6221)
-
-![image](https://github.com/user-attachments/assets/ddb2f7d8-5e4e-4454-898c-bbc53dbe0db8)
-
-![image](https://github.com/user-attachments/assets/4cfdeec9-b21b-4c96-871a-ccd5c475eb3f)
-
-![image](https://github.com/user-attachments/assets/61a153e2-9836-45a0-b12f-caae14415cba)
+days_in_waiting_list, customer_type, adr, required_car_parking_spaces, total_of_special_requests, adr, customer_type, days_in_waiting_list,
+company, agent, deposit_type, booking_changes, previous_bookings_not_canceled, is_repeated_guest.
 
 
-Null Value Check: I checked for null values in the dataset and found none, ensuring the data was complete and ready for analysis.
+Null Value Check: 
+
+I checked for null values in the dataset and found none, ensuring the data was complete and ready for analysis.
 
 Data Transformation:
+
 I examined whether guests received their desired room type or not and categorized the guests into types such as family, couples, or singles.
 To achieve this, I created a new column named room_status to indicate whether the reserved room type matched the assigned room type. The formula used was:
 
@@ -64,14 +46,14 @@ Hotel Booking/Cancellations Data: The primary dataset used for this analysis is 
 ![Visualization](https://github.com/user-attachments/assets/f6892761-201d-44c3-ac26-9c10e2a0a997)
 
 
-1. Total Bookings vs. Total Cancellations
+1. Total Bookings Vs Total Cancellations-
 
 Total Bookings: 119,390
 Total Cancellations: 44,224
 
 The percentage of cancellations is approximately 37.04%. This indicates that more than one-third of the total bookings are canceled, highlighting a significant area for improvement.
 
-2. Cancellations with Respect to Guest Type
+2. Cancellations with Respect to Guest Type-
 
 The cancellation percentages for each guest type are as follows:
 
@@ -83,19 +65,19 @@ Singles: 29.03%
 
 Couples have the highest cancellation rate at 39.75%, followed by families and singles. This suggests that couples are more likely to cancel their bookings compared to other guest types. Understanding the reasons behind this behavior can help in formulating strategies to reduce cancellations.
 
-3. Impact of Room Allocation on Cancellations
+3. Impact of Room Allocation on Cancellations-
 
 The desired room type has a higher cancellation rate of approximately 41.56%.
 
 This finding suggests that the mismatch between the room reserved by the guest and the room actually allocated does not significantly impact the overall cancellation rate. Guests appear to be less concerned about receiving a different room type than they initially desired.
 
-4. Cancellations by State
+4. Cancellations by State-
 
 The bar chart analysis shows that each state has a similar cancellation rate, indicating a uniform pattern of cancellations across different locations.
 
 States with the highest booking rates include Maharashtra, Uttar Pradesh, and Bengal. These states also tend to have a higher number of cancellations, potentially due to their higher volume of bookings.
 
-5. Cancellations Based on Months
+5. Cancellations Based on Months-
 
 The graph analysis reveals that people prefer traveling during the summer season, with the highest booking rates in May, June, July, and August.
 During these months, the cancellation rate is relatively low compared to the number of bookings, indicating a stronger commitment to travel plans during the summer season.
