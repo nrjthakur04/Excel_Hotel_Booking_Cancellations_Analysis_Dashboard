@@ -44,12 +44,13 @@ days_in_waiting_list, customer_type, adr, required_car_parking_spaces, total_of_
 Null Value Check: I checked for null values in the dataset and found none, ensuring the data was complete and ready for analysis.
 
 Data Transformation:
-
 I examined whether guests received their desired room type or not and categorized the guests into types such as family, couples, or singles.
 To achieve this, I created a new column named room_status to indicate whether the reserved room type matched the assigned room type. The formula used was:
+
 room_status = IF([@reserved_room_type] = [@assigned_room_type],"Desired","Un-Desired")
 
 Additionally, I created another column named Guest_Type to categorize guests based on their booking patterns using the formula:
+
 Guest_Type = IF(AND(E2 = 2, F2 = 0, G2 = 0), "Couples", IF(AND(E2 = 1, F2 = 0, G2 = 0), "Single", "Family"))
 
 This setup allowed us to perform a deeper analysis of cancellations based on room type preference and guest demographics.
@@ -64,27 +65,38 @@ Hotel Booking/Cancellations Data: The primary dataset used for this analysis is 
 
 
 1. Total Bookings vs. Total Cancellations
+
 Total Bookings: 119,390
 Total Cancellations: 44,224
+
 The percentage of cancellations is approximately 37.04%. This indicates that more than one-third of the total bookings are canceled, highlighting a significant area for improvement.
 
 2. Cancellations with Respect to Guest Type
+
 The cancellation percentages for each guest type are as follows:
 
 Couples: 39.75%
+
 Family: 34.39%
+
 Singles: 29.03%
+
 Couples have the highest cancellation rate at 39.75%, followed by families and singles. This suggests that couples are more likely to cancel their bookings compared to other guest types. Understanding the reasons behind this behavior can help in formulating strategies to reduce cancellations.
 
 3. Impact of Room Allocation on Cancellations
+
 The desired room type has a higher cancellation rate of approximately 41.56%.
+
 This finding suggests that the mismatch between the room reserved by the guest and the room actually allocated does not significantly impact the overall cancellation rate. Guests appear to be less concerned about receiving a different room type than they initially desired.
 
 4. Cancellations by State
+
 The bar chart analysis shows that each state has a similar cancellation rate, indicating a uniform pattern of cancellations across different locations.
+
 States with the highest booking rates include Maharashtra, Uttar Pradesh, and Bengal. These states also tend to have a higher number of cancellations, potentially due to their higher volume of bookings.
 
 5. Cancellations Based on Months
+
 The graph analysis reveals that people prefer traveling during the summer season, with the highest booking rates in May, June, July, and August.
 During these months, the cancellation rate is relatively low compared to the number of bookings, indicating a stronger commitment to travel plans during the summer season.
 
